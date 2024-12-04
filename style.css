@@ -1,5 +1,4 @@
 
-
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +16,10 @@ header .nav{
   justify-content: space-between;
   color: white;
   /* padding: 40px; */
+  margin-top: -40px;
+}
+header .nav .ham{
+  display: none;
 }
 
 header .nav h1 {
@@ -297,8 +300,28 @@ form .btn{
 }
 
 header .nav ul {
+  position: absolute;
+  top: 60px;
+border-top-left-radius: 10px;
+ border-bottom-right-radius: 10px;
+  left: 0;
+  width: 100%;
+  background-color: #2d3e50c3;
+  display: none;
   flex-direction: column;
   align-items: center;
+  padding: 10px 0;
+
+
 }
+header .nav .ham{
+  display: block;
+}
+header .nav .ham i{
+  font-size: 2em;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
 }
 
